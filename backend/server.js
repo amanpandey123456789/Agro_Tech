@@ -15,4 +15,4 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/crops", require("./routes/cropRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 
-app.listen(5000, () => console.log("Server running on 5000"));
+app.listen(process.env.PORT, () => console.log("Server running on 5000"));
